@@ -1,0 +1,68 @@
+﻿@page
+@model Oficina.io.Pages.Carro.NovoModel
+@{
+    ViewData["Title"] = "Adicionar novo veículo";
+}
+
+<h2 class="text-info">@ViewData["Title"]</h2>
+<div class="border container">
+    <form method="post">
+        @*<div class="text-danger" asp-validation-summary="All"></div>*@
+        <div class="form-group row mt-3">
+            <div class="col-3">
+                <label asp-for="Carro.Marca"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Carro.Marca" class="form-control" />
+            </div>
+            <span asp-validation-for="Carro.Marca" class="text-danger"></span>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="col-3">
+                <label asp-for="Carro.Modelo"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Carro.Modelo" class="form-control" />
+            </div>
+            <span asp-validation-for="Carro.Modelo"  class="text-danger"></span>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="col-3">
+                <label asp-for="Carro.AnoFabricacao"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Carro.AnoFabricacao" class="form-control" />
+            </div>
+            <span asp-validation-for="Carro.AnoFabricacao"  class="text-danger"></span>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="col-3">
+                <label asp-for="Carro.AnoModelo"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Carro.AnoModelo" class="form-control" />
+            </div>
+            <span asp-validation-for="Carro.AnoModelo"  class="text-danger"></span>
+        </div>
+        <div class="form-group row mt-3">
+            <div class="col-3">
+                <label asp-for="Carro.Placa"></label>
+            </div>
+            <div class="col-6">
+                <input asp-for="Carro.Placa" class="form-control" />
+            </div>
+            <span asp-validation-for="Carro.Placa"  class="text-danger"></span>
+        </div>
+        <div class="form-group row">
+            <div class="col-3 offset-3">
+                <input type="submit" value="Adicionar" class="btn btn-primary form-control" />
+            </div>
+            <div class="col-3">
+                <a asp-page="Index" class="btn btn-success form-control">Voltar</a>
+            </div>
+        </div>
+    </form>
+</div>
+@section Scripts{ 
+ <partial name="_ValidationScriptsPartial" />
+}

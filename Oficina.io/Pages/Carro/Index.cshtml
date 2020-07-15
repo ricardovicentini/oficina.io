@@ -1,0 +1,91 @@
+﻿@page "{handler?}/{id:int?}"
+@model Oficina.io.Pages.Carro.IndexModel
+@{
+    ViewData["Title"] = "Lista de Carros";
+}
+
+<div class="container row p-0 m-0">
+    <div class="col-10">
+        <h2 class="text-info">Lista de Carros</h2>
+    </div>
+    <div class="col-2">
+        <a asp-page="Novo" class="btn btn-info form-control text-white">Adicionar</a>
+    </div>
+    <div class="col-12 border p-3 mt-3">
+        <form method="post">
+            @if (Model.Carros.Any())
+            {
+                <table class="table table-striped border">
+                    <tr class="table-secondary">
+                        <th>
+                            <label asp-for="Carros.FirstOrDefault().Marca"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Carros.FirstOrDefault().Modelo"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Carros.FirstOrDefault().AnoFabricacao"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Carros.FirstOrDefault().AnoModelo"></label>
+                        </th>
+                        <th>
+                            <label asp-for="Carros.FirstOrDefault().Placa"></label>
+                        </th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                    @foreach (var carro in Model.Carros)
+                    {
+                        <tr>
+                            <td>
+                                @carro.Marca
+                            </td>
+                            <td>
+                                @carro.Modelo
+                            </td>
+                            <td>
+                                @carro.AnoFabricacao
+                            </td>
+                            <td>
+                                @carro.AnoModelo
+                            </td>
+                            <td>
+                                @carro.Placa
+                            </td>
+                            <td>
+                                <button asp-page-handler="Excluir" asp-route-id="@carro.Id" onclick="return confirm('Quer mesmo excluir?')" class="btn btn-danger btn-sm">Apagar</button>
+                                <a asp-page="Alterar" asp-route-id="@carro.Id" class="btn btn-success btn-sm">Alterar</a>
+                                <a onclick="checkRodizio('@carro.Placa')" class="btn btn-warning btn-sm">Rodizio</a>
+                            </td>
+                        </tr>
+                    }
+                </table>
+
+            }
+            else
+            {
+                <p>Sem dados</p>
+            }
+        </form>
+    </div>
+    <a onclick="exibirTabelaRodizio()" class="btn btn-info btn-lg mt-3">Ver Rodizio</a>
+
+    <div class="col-12 border p-3 mt-3">
+        <table id="DT_RODIZIO" class="table table-striped table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <td>Placa Final</td>
+                    <td>Dia Semana</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+</div>
+@section Scripts{
+    <partial name="_Toastr" />
+    <partial name="_DataTAbles" />
+    <script src="~/js/rodizio.js"></script>
+}
+

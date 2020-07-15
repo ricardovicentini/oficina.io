@@ -1,0 +1,9 @@
+C:\Users\ric_v\OneDrive\Documentos\Treinamentos - TI\Projeto Asp.net Core\Oficina.io\Oficina.io.Data\obj\Debug\netcoreapp3.1\Oficina.io.Data.AssemblyInfoInputs.cache
+C:\Users\ric_v\OneDrive\Documentos\Treinamentos - TI\Projeto Asp.net Core\Oficina.io\Oficina.io.Data\obj\Debug\netcoreapp3.1\Oficina.io.Data.AssemblyInfo.cs
+C:\Users\ric_v\OneDrive\Documentos\Treinamentos - TI\Projeto Asp.net Core\Oficina.io\Oficina.io.Data\obj\Debug\netcoreapp3.1\Oficina.io.Data.csproj.CoreCompileInputs.cache
+C:\Users\ric_v\OneDrive\Documentos\Treinamentos - TI\Projeto Asp.net Core\Oficina.io\Oficina.io.Data\bin\Debug\netcoreapp3.1\Oficina.io.Data.deps.json
+C:\Users\ric_v\OneDrive\Documentos\Treinamentos - TI\Projeto Asp.net Core\Oficina.io\Oficina.io.Data\bin\Debug\netcoreapp3.1\Oficina.io.Data.dll
+C:\Users\ric_v\OneDrive\Documentos\Treinamentos - TI\Projeto Asp.net Core\Oficina.io\Oficina.io.Data\bin\Debug\netcoreapp3.1\Oficina.io.Data.pdb
+C:\Users\ric_v\OneDrive\Documentos\Treinamentos - TI\Projeto Asp.net Core\Oficina.io\Oficina.io.Data\obj\Debug\netcoreapp3.1\Oficina.io.Data.dll
+C:\Users\ric_v\OneDrive\Documentos\Treinamentos - TI\Projeto Asp.net Core\Oficina.io\Oficina.io.Data\obj\Debug\netcoreapp3.1\Oficina.io.Data.pdb
+C:\Users\ric_v\OneDrive\Documentos\Treinamentos - TI\Projeto Asp.net Core\Oficina.io\Oficina.io.Data\obj\Debug\netcoreapp3.1\Oficina.io.Data.csprojAssemblyReference.cache
